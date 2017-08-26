@@ -1,0 +1,24 @@
+extends layout
+
+block mylink
+  link(rel="stylesheet", href="css/index.css")
+block myscript
+  script(src="js/index.js")
+block content
+  mixin setBookBlock(type, id)
+    a(href="#") #{type}
+    hr
+    div(id='#{id}')
+      .row
+        - for(var i = 0; i < 4; i++)
+          .col-md-3.text-center
+            a(href="#")
+              .thumbnail
+                img(src="#", width="70%", alt="缩略图占位符")
+              p 价格
+              h6 书名
+  +setBookBlock('特价书目', 'zero')
+  +setBookBlock('文艺', 'one')
+  +setBookBlock('经管', 'two')
+  +setBookBlock('社科', 'three')
+  +setBookBlock('生活', 'four')

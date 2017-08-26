@@ -1,0 +1,14 @@
+block header
+  nav.navbar.navbar-toggleable-md.navbar-inverse.bg-inverse
+      button.navbar-toggler.navbar-toggler-right(type='button', data-toggle="collapse", data-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation") 
+        span.navbar-toggler-icon
+      a.navbar-brand(href='.') 首页
+      .collapse.navbar-collapse#navbarSupportedContent
+        ul.navbar-nav.mr-auto
+          li.nav-item
+            a.nav-link(href='login') 登录
+          li.nav-item
+            a.nav-link(href='register') 注册
+        form.form-inline.my-2.my-lg-0
+          input.form-control.mr-sm-2(type='text',placeholder='作者、作品、出版社')
+          button.btn.btn-outline-success.my-2.my-sm-0(type='submit') 搜索

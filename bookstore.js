@@ -1,8 +1,20 @@
 var express = require('express');
+var path = require('path');
 
 var app = express();
 
 app.set('port', process.env.PORT || 28848);
+
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'jade');
+
+// uncomment after placing your favicon in /public
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.get('/', function(req, res) {
+  res.render('index');
+})
 
 // 404 NOT FOUND
 app.use(function(req, res) {
