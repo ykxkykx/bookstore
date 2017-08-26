@@ -1,0 +1,28 @@
+{
+  "name": "bookstore",
+  "version": "1.0.0",
+  "description": "a bookstore demo",
+  "main": "bookstore.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ykxkykx/bookstore.git"
+  },
+  "keywords": [
+    "jade",
+    "bootstrap",
+    "express"
+  ],
+  "author": "ykxkykx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ykxkykx/bookstore/issues"
+  },
+  "homepage": "https://github.com/ykxkykx/bookstore#readme",
+  "dependencies": {
+    "express": "^4.15.4",
+    "jade": "^1.11.0"
+  }
+}
