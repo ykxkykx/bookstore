@@ -1,0 +1,23 @@
+extends ../layout
+
+block header
+
+block content
+  form.register
+    .form-group
+      label 用户名：
+      input.form-control(placeholder="请输入用户名：")
+    .form-group
+      label 密码：
+      input.form-control(placeholder="请输入密码：")
+    .form-group
+      label 电话：
+      input.form-control(placeholder="请输入电话号码：")
+    .form-group
+      label 邮箱：
+      input.form-control(placeholder="请输入邮箱：")
+    .form-group
+      label 收货地址
+      textarea.form-control(style="resize:none", placeholder="请输入收货地址：")
+    .button
+      button.btn.btn-primary 注册
