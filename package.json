@@ -23,6 +23,7 @@
   "homepage": "https://github.com/ykxkykx/bookstore#readme",
   "dependencies": {
     "express": "^4.15.4",
-    "jade": "^1.11.0"
+    "jade": "^1.11.0",
+    "mongoose": "^4.11.11"
   }
 }

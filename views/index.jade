@@ -3,12 +3,12 @@ extends layout
 //- block mylink
 //-   link(rel="stylesheet", href="css/bookstore.css")
 block myscript
-  script(src="js/index.js")
+  script(src="js/index.js", defer="defer")
 block content
-  mixin setBookBlock(type, id)
-    a(href="#") #{type}
+  mixin setBookBlock(type)
+    a.title(href="#") #{type}
     hr
-    div(id='#{id}')
+    div.type
       .row
         - for(var i = 0; i < 4; i++)
           .col-md-3.text-center
@@ -17,8 +17,8 @@ block content
                 img(src="#", width="70%", alt="缩略图占位符")
               p 价格
               h6 书名
-  +setBookBlock('特价书目', 'zero')
-  +setBookBlock('文艺', 'one')
-  +setBookBlock('经管', 'two')
-  +setBookBlock('社科', 'three')
-  +setBookBlock('生活', 'four')
+  +setBookBlock('特价书目')
+  +setBookBlock('文艺')
+  +setBookBlock('经管')
+  +setBookBlock('社科')
+  +setBookBlock('生活')
